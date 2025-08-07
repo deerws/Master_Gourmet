@@ -57,7 +57,7 @@ export class VideoProcessor {
             reject(new Error("Downloaded file not found"));
           }
         } else {
-          reject(new Error(`yt-dlp failed with code ${code}`));
+          reject(new Error("Instagram requer login para baixar vídeos. Use o upload manual: baixe o vídeo pelo Instagram e faça upload aqui."));
         }
       });
     });

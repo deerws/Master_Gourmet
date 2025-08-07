@@ -163,11 +163,14 @@ export default function UploadModal({ open, onOpenChange }: UploadModalProps) {
               
               <Button
                 onClick={() => setMode('instagram')}
-                className="w-full bg-gradient-to-r from-dark-red to-red-700 text-white p-4 h-auto rounded-2xl flex items-center justify-center space-x-3 hover:shadow-lg transition-all"
+                className="w-full bg-gradient-to-r from-dark-red to-red-700 text-white p-4 h-auto rounded-2xl flex flex-col items-center justify-center space-y-1 hover:shadow-lg transition-all"
                 data-testid="button-instagram-link"
               >
-                <Instagram className="h-5 w-5" />
-                <span className="font-semibold">Link do Instagram</span>
+                <div className="flex items-center space-x-2">
+                  <Instagram className="h-5 w-5" />
+                  <span className="font-semibold">Do Instagram</span>
+                </div>
+                <span className="text-xs opacity-90">Baixe e faça upload</span>
               </Button>
             </div>
           )}
@@ -239,9 +242,19 @@ export default function UploadModal({ open, onOpenChange }: UploadModalProps) {
 
           {mode === 'instagram' && (
             <div className="space-y-4">
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+                <h4 className="font-semibold text-blue-800 mb-2">📱 Como usar vídeos do Instagram:</h4>
+                <ol className="text-blue-700 text-sm space-y-1 list-decimal list-inside">
+                  <li>Abra o Instagram e encontre o Reel da receita</li>
+                  <li>Use um app como "Video Downloader" ou site como SaveInsta</li>
+                  <li>Baixe o vídeo para seu celular</li>
+                  <li>Use o botão "Upload de Vídeo" acima</li>
+                </ol>
+              </div>
+
               <div>
                 <Label htmlFor="instagram-url" data-testid="label-instagram-url">
-                  Link do Instagram Reel
+                  Ou cole o Link do Instagram (pode não funcionar)
                 </Label>
                 <Input
                   id="instagram-url"
