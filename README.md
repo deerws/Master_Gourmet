@@ -74,8 +74,8 @@ Master Gourmet is a modern web application that revolutionizes recipe management
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/master-gourmet.git
-cd master-gourmet
+git clone https://github.com/your-username/Master_Gourmet.git
+cd Master_Gourmet
 ```
 
 2. **Install dependencies**
@@ -241,13 +241,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Radix UI** for accessible primitives
 - **Tailwind CSS** for utility-first styling
 
-## 📞 Support
-
-If you encounter any issues or have questions:
-1. Check the [Issues](https://github.com/your-username/master-gourmet/issues) page
-2. Create a new issue with detailed information
-3. Follow the issue template for faster resolution
-
----
-
-**Made with ❤️ for food enthusiasts and home cooks**
